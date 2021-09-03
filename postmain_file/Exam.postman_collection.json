@@ -1,0 +1,71 @@
+{
+	"variables": [],
+	"info": {
+		"name": "Exam",
+		"_postman_id": "218a56ed-d2dc-5a5d-31ac-d6acee971f47",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Search_by_Geo_location",
+			"request": {
+				"url": {
+					"raw": "http://localhost:8080/v2/nearest_city?lat=21.0&lon=105.8",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"v2",
+						"nearest_city"
+					],
+					"query": [
+						{
+							"key": "lat",
+							"value": "21.0",
+							"equals": true,
+							"description": ""
+						},
+						{
+							"key": "lon",
+							"value": "105.8",
+							"equals": true,
+							"description": ""
+						}
+					],
+					"variable": []
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Load_all_contries_states_citie_inot_list",
+			"request": {
+				"url": "http://localhost:8080/v2/list/countries",
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		}
+	]
+}
